@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/imageView_avatar"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        tools:srcCompat="@android:drawable/presence_online" />
+
+    <ImageView
+        android:id="@+id/imageView_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView_userlogo"
+        android:layout_toRightOf="@id/imageView_avatar"
+        android:paddingLeft="5dp"
+        app:srcCompat="@drawable/location_logo" />
+
+    <ImageView
+        android:id="@+id/imageView_userlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView_avatar"
+        android:paddingLeft="5dp"
+        app:srcCompat="@drawable/user_logo" />
+
+    <TextView
+        android:id="@+id/UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_toRightOf="@id/imageView_userlogo"
+        android:paddingLeft="7dp"
+        android:text="Muhammad Sulaiman Javed" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UserName"
+        android:layout_toRightOf="@id/imageView_location"
+        android:paddingLeft="7dp"
+        android:paddingTop="7dp"
+        android:text="167, B2, Block B, Johar Town, Lahore" />
+
+    <ImageView
+        android:id="@+id/imageView_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView_location"
+        android:layout_toRightOf="@id/imageView_avatar"
+        android:paddingLeft="5dp"
+        app:srcCompat="@drawable/phone_logo" />
+
+    <ImageView
+        android:id="@+id/imageView_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView_phone"
+        android:layout_toRightOf="@id/imageView_avatar"
+        android:paddingLeft="5dp"
+        app:srcCompat="@drawable/profile_logo" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location"
+        android:layout_toRightOf="@id/imageView_phone"
+        android:paddingLeft="7dp"
+        android:paddingTop="7dp"
+        android:text="+92 3466002191" />
+
+    <TextView
+        android:id="@+id/bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone"
+        android:layout_toRightOf="@id/imageView_profile"
+        android:paddingLeft="7dp"
+        android:paddingTop="7dp"
+        android:text="CS Sophomore Student FAST NU" />
+
+    <ImageButton
+        android:id="@+id/imageButton_call"
+        android:layout_width="61dp"
+        android:layout_height="29dp"
+        android:layout_below="@id/imageView_profile"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/imageView_avatar"
+        android:paddingLeft="5dp"
+        app:srcCompat="@android:drawable/sym_action_call" />
+
+    <ImageButton
+        android:id="@+id/imageButton_chat"
+        android:layout_width="61dp"
+        android:layout_height="29dp"
+        android:layout_below="@id/imageView_profile"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/imageButton_call"
+        android:paddingLeft="5dp"
+        app:srcCompat="@android:drawable/sym_action_chat" />
+
+    <TextView
+        android:id="@+id/divider"
+        android:layout_width="398dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageButton_call"
+        android:layout_marginTop="-5dp"
+        android:text="--------------------------------------------------------------------------------------------------"
+        android:textColor="#757575" />
+
+</RelativeLayout>
